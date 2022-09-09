@@ -64,7 +64,7 @@ namespace DunkShot.Controllers
             }
         }
 
-        public void StartAim()
+        private void StartAim()
         {
             if (!ball.aiming)
             {
@@ -77,7 +77,7 @@ namespace DunkShot.Controllers
                 CalculatePath(GetComponent<Rigidbody2D>().mass, ball.startPos);
         }
 
-        public void EndAim()
+        private void EndAim()
         {
             AudioController.Instance.PlayAudio(AudioController.Instance.shotSound);
             ball.ShootBall();

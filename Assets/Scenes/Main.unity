@@ -1686,6 +1686,7 @@ GameObject:
   m_Component:
   - component: {fileID: 515353577}
   - component: {fileID: 515353576}
+  - component: {fileID: 515353578}
   m_Layer: 0
   m_Name: Tutorial
   m_TagString: Untagged
@@ -1758,6 +1759,25 @@ Transform:
   m_Father: {fileID: 232975506}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -21.626}
+--- !u!95 &515353578
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515353575}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: af90717f024d0ca3798052db4a415fce, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1974,6 +1994,7 @@ MonoBehaviour:
   gameManager: {fileID: 1671585446}
   aiming: 0
   startPos: {x: 0, y: 0, z: 0}
+  isShot: 0
 --- !u!50 &735638743
 Rigidbody2D:
   serializedVersion: 4
@@ -4102,9 +4123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ui: {fileID: 1290828360}
-  theme: {fileID: 1600052185}
   score: {fileID: 1507073021}
-  ball: {fileID: 735638742}
 --- !u!61 &1671585447
 BoxCollider2D:
   m_ObjectHideFlags: 0

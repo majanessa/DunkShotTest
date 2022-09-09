@@ -24,7 +24,7 @@ namespace DunkShot.Controllers
         
         public void SetSprite()
         {
-            _bgRenderer.sprite = themes[PlayerPrefs.GetInt("ThemeId")] ?? themes[0];
+            _bgRenderer.sprite = themes[GetThemeId()];
         }
 
         public int GetThemeId()

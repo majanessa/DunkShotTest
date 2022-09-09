@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace DunkShot.Controllers
 {
@@ -6,16 +7,16 @@ namespace DunkShot.Controllers
     {
         public Collider2D coll;
         
-        public GameObject Star;
+        public GameObject star;
 
         private void OnEnable()
         {
-            if (Star != null)
+            if (star != null)
             {
                 int random = Random.Range(1, 4);
                 if (random == 1)
                 {
-                    Star.SetActive(true);
+                    star.SetActive(true);
                 }
             }
         }

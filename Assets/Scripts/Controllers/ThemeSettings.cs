@@ -33,7 +33,7 @@ namespace DunkShot.Controllers
         {
             if (Instance.GetThemeId() == 0)
                 On();
-            if (Instance.GetThemeId() == 1)
+            else if (Instance.GetThemeId() == 1)
                 Off();
         }
     }

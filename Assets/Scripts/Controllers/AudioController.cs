@@ -26,7 +26,7 @@ namespace DunkShot.Controllers
 
         public void SetVolume()
         {
-            audioSource.volume = PlayerPrefs.GetInt("Volume");
+            audioSource.volume = PlayerPrefs.HasKey("Volume") ? PlayerPrefs.GetInt("Volume") : 1;
         }
 
         public void PlayAudio(AudioClip currentClip)

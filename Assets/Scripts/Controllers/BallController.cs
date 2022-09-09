@@ -10,7 +10,6 @@ namespace DunkShot.Controllers
         public bool aiming = false;
         public Vector3 startPos;
         public bool isShot = false;
-        private bool _isCollision = true;
         
         private int _basketCounter = 0;
 
@@ -44,6 +43,10 @@ namespace DunkShot.Controllers
             {
                 isShot = false;
                 AudioController.Instance.PlayAudio(AudioController.Instance.bounseSound);
+            }
+            if (collision.gameObject.CompareTag("InBasket"))
+            {
+                isShot = false;
             }
         }
 

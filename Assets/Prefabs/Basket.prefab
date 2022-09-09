@@ -299,6 +299,7 @@ GameObject:
   - component: {fileID: 6813562386628895409}
   - component: {fileID: 6813562386628895410}
   - component: {fileID: 6813562386628895411}
+  - component: {fileID: 2141944934941416230}
   m_Layer: 0
   m_Name: Star
   m_TagString: Star
@@ -359,7 +360,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 2537db980d91e3860b1360fd2cf288ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -387,6 +388,25 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0.00000047683716}
   serializedVersion: 2
   m_Radius: 0.695
+--- !u!95 &2141944934941416230
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6813562386628895408}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e95ce48c7389bf00c8f3810864deef13, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6813562387388584996
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,7 +586,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coll: {fileID: 6813562386534383615}
-  Star: {fileID: 6813562386628895408}
+  star: {fileID: 6813562386628895408}
 --- !u!1 &6813562387463957764
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,9 +597,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6813562387463957765}
   - component: {fileID: 6813562387463957766}
+  - component: {fileID: 591854982905969376}
   m_Layer: 0
   m_Name: NetCollider
-  m_TagString: Untagged
+  m_TagString: InBasket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -638,3 +659,24 @@ PolygonCollider2D:
       - {x: 0.54054546, y: -0.5570702}
       - {x: 1.0709746, y: -0.17406878}
       - {x: 1.5494294, y: 0.5137239}
+--- !u!50 &591854982905969376
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6813562387463957764}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
