@@ -6,9 +6,11 @@ namespace DunkShot.Controllers
     {
         private void Awake()
         {
-            if (PlayerPrefs.GetInt("BtnAudioOn") == 1)
+            if (!PlayerPrefs.HasKey("BtnAudioOn"))
                 base.On();
-            if (PlayerPrefs.GetInt("BtnAudioOn") == 0)
+            else if (PlayerPrefs.GetInt("BtnAudioOn") == 1)
+                base.On();
+            else if (PlayerPrefs.GetInt("BtnAudioOn") == 0)
                 base.Off();
         }
 
